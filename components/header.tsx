@@ -22,6 +22,11 @@ const services = [
     description: "Fast, reliable delivery across Kathmandu and all of Nepal",
   },
   {
+    title: "International Exports",
+    href: "/services/international-exports",
+    description: "Reliable export services from Nepal to worldwide destinations",
+  },
+  {
     title: "Express Delivery",
     href: "/services/express-delivery",
     description: "Same-day and next-day delivery options for urgent shipments",
@@ -51,7 +56,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between py-4">
         <div className="flex items-center gap-6 md:gap-10">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-primary">SwiftElite Nepal</span>
+            <span className="text-xl font-bold text-primary">Nepal Air Export</span>
           </Link>
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>

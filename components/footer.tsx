@@ -7,25 +7,37 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="text-xl font-bold mb-4">SwiftElite Nepal</h3>
+            <h3 className="text-xl font-bold mb-4">Nepal Air Export</h3>
             <p className="text-primary-foreground/80 mb-4">
-              Nepal's leading courier service with nationwide coverage. Fast, reliable, and secure delivery solutions
-              across Nepal and worldwide.
+              Nepal's #1 courier service & international export solution. Fast, reliable domestic delivery and global
+              shipping with real-time tracking and customs handling.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+              <Link
+                href="https://www.facebook.com/nepairexport"
+                className="text-primary-foreground/80 hover:text-primary-foreground"
+              >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+              <Link
+                href="https://www.twitter.com/nepairexport"
+                className="text-primary-foreground/80 hover:text-primary-foreground"
+              >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+              <Link
+                href="https://www.instagram.com/nepairexport"
+                className="text-primary-foreground/80 hover:text-primary-foreground"
+              >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
+              <Link
+                href="https://www.linkedin.com/company/nepairexport"
+                className="text-primary-foreground/80 hover:text-primary-foreground"
+              >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -104,10 +116,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@swiftelite.np"
+                  href="mailto:info@nepairexport.com"
                   className="text-primary-foreground/80 hover:text-primary-foreground"
                 >
-                  info@swiftelite.np
+                  info@nepairexport.com
                 </a>
               </li>
               <li>
@@ -120,7 +132,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <p className="text-primary-foreground/60 text-sm">
-            © {new Date().getFullYear()} SwiftElite Courier Nepal. All rights reserved.
+            © {new Date().getFullYear()} Nepal Air Export. All rights reserved.
           </p>
         </div>
       </div>

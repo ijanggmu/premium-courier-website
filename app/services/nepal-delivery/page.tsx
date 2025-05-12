@@ -4,10 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Nepal Delivery Services | SwiftElite Courier Nepal",
+  title: "Best Courier Services in Nepal | Nepal Air Export",
   description:
-    "Reliable courier and parcel delivery services across Nepal. Same-day delivery in Kathmandu and next-day delivery to major cities.",
-  keywords: "Nepal delivery service, Kathmandu courier, parcel delivery Nepal, same day delivery Kathmandu",
+    "Fastest courier and parcel delivery services across Nepal. Same-day delivery in Kathmandu and next-day delivery to all major cities with real-time tracking.",
+  keywords:
+    "courier service nepal, best courier nepal, parcel delivery nepal, same day delivery kathmandu, send parcel nepal, package delivery kathmandu, nepal courier company",
 }
 
 export default function NepalDeliveryPage() {
@@ -15,10 +16,10 @@ export default function NepalDeliveryPage() {
     <div className="py-12 md:py-16">
       <div className="container">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Courier Services Across Nepal</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">Best Courier Services Across Nepal</h1>
           <p className="text-lg text-muted-foreground">
-            Fast, reliable, and secure parcel delivery services throughout Nepal, from Kathmandu to Pokhara, Chitwan,
-            and beyond.
+            Fast, reliable, and affordable parcel delivery services throughout Nepal, from Kathmandu to Pokhara,
+            Biratnagar, Chitwan, and all 77 districts.
           </p>
         </div>
 

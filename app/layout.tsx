@@ -13,18 +13,22 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: "SwiftElite Courier Nepal | Premium Delivery & Parcel Services in Nepal",
+  title: "Nepal Air Export | #1 Courier & International Shipping Service in Nepal",
   description:
-    "Nepal's leading courier service for fast, reliable parcel delivery across Kathmandu and nationwide. International shipping, express delivery, and specialized handling services.",
+    "Nepal's leading courier service for fast, reliable parcel delivery and international exports. Same-day delivery in Kathmandu and nationwide shipping with real-time tracking.",
   keywords:
-    "courier service Nepal, send parcel Nepal, package delivery Kathmandu, international shipping Nepal, express courier Nepal",
+    "nepal air export, courier service nepal, send parcel nepal, international shipping nepal, export from nepal, package delivery kathmandu, cargo nepal, courier kathmandu, nepal export service",
   openGraph: {
-    title: "SwiftElite Courier Nepal | Premium Delivery & Parcel Services",
-    description: "Nepal's trusted courier service for fast, reliable parcel delivery across Kathmandu and nationwide.",
-    url: "https://swiftelite.np",
-    siteName: "SwiftElite Courier Nepal",
+    title: "Nepal Air Export | #1 Courier & International Shipping Service",
+    description:
+      "Nepal's trusted courier service for domestic delivery and international exports with real-time tracking.",
+    url: "https://nepairexport.com",
+    siteName: "Nepal Air Export",
     locale: "en_US",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://nepairexport.com",
   },
     generator: 'v0.dev'
 }
@@ -37,9 +41,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://swiftelite.np" />
+        <link rel="canonical" href="https://nepairexport.com" />
         <meta name="geo.region" content="NP" />
         <meta name="geo.placename" content="Kathmandu" />
+        <meta name="google-site-verification" content="your-verification-code" />
       </head>
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
@@ -57,10 +62,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "SwiftElite Courier Nepal",
-              image: "https://swiftelite.np/logo.png",
-              url: "https://swiftelite.np",
+              name: "Nepal Air Export",
+              image: "https://nepairexport.com/logo.png",
+              url: "https://nepairexport.com",
               telephone: "+977-1-4XXXXXX",
+              description:
+                "Nepal's premier courier service for domestic delivery and international exports with real-time tracking and specialized handling.",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Durbar Marg",
@@ -79,7 +86,36 @@ export default function RootLayout({
                 opens: "09:00",
                 closes: "18:00",
               },
-              sameAs: ["https://www.facebook.com/swiftelitenepal", "https://www.instagram.com/swiftelitenepal"],
+              sameAs: ["https://www.facebook.com/nepairexport", "https://www.instagram.com/nepairexport"],
+              priceRange: "$$",
+              servesCuisine: "Courier and Shipping Services",
+            }),
+          }}
+        />
+
+        {/* Service Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              serviceType: "Courier and International Export Service",
+              provider: {
+                "@type": "LocalBusiness",
+                name: "Nepal Air Export",
+              },
+              areaServed: {
+                "@type": "Country",
+                name: "Nepal",
+              },
+              description:
+                "Fast, reliable parcel delivery across Nepal and international export services with real-time tracking.",
+              offers: {
+                "@type": "Offer",
+                price: "150",
+                priceCurrency: "NPR",
+              },
             }),
           }}
         />
