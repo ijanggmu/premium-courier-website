@@ -17,6 +17,11 @@ import { Menu } from "lucide-react"
 
 const services = [
   {
+    title: "Nepal Delivery Services",
+    href: "/services/nepal-delivery",
+    description: "Fast, reliable delivery across Kathmandu and all of Nepal",
+  },
+  {
     title: "Express Delivery",
     href: "/services/express-delivery",
     description: "Same-day and next-day delivery options for urgent shipments",
@@ -46,7 +51,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between py-4">
         <div className="flex items-center gap-6 md:gap-10">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-primary">SwiftElite</span>
+            <span className="text-xl font-bold text-primary">SwiftElite Nepal</span>
           </Link>
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
@@ -96,8 +101,8 @@ export default function Header() {
           </NavigationMenu>
         </div>
         <div className="flex items-center gap-4">
-          <Link href="/contact" className="hidden md:block">
-            <Button>Get a Quote</Button>
+          <Link href="/quote" className="hidden md:block">
+            <Button>Send a Parcel</Button>
           </Link>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
@@ -126,8 +131,8 @@ export default function Header() {
                 <Link href="/contact" onClick={() => setIsOpen(false)} className="text-lg font-medium">
                   Contact
                 </Link>
-                <Link href="/contact" onClick={() => setIsOpen(false)}>
-                  <Button className="w-full mt-4">Get a Quote</Button>
+                <Link href="/quote" onClick={() => setIsOpen(false)}>
+                  <Button className="w-full mt-4">Send a Parcel</Button>
                 </Link>
               </nav>
             </SheetContent>

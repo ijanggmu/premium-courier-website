@@ -7,9 +7,10 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="text-xl font-bold mb-4">SwiftElite</h3>
+            <h3 className="text-xl font-bold mb-4">SwiftElite Nepal</h3>
             <p className="text-primary-foreground/80 mb-4">
-              Premium courier services with global reach. Fast, reliable, and secure delivery solutions.
+              Nepal's leading courier service with nationwide coverage. Fast, reliable, and secure delivery solutions
+              across Nepal and worldwide.
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground">
@@ -35,10 +36,10 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/services/express-delivery"
+                  href="/services/nepal-delivery"
                   className="text-primary-foreground/80 hover:text-primary-foreground"
                 >
-                  Express Delivery
+                  Nepal Delivery Services
                 </Link>
               </li>
               <li>
@@ -93,26 +94,25 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold mb-4">Support</h3>
+            <h3 className="font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2">
+              <li className="text-primary-foreground/80">Durbar Marg, Kathmandu 44600, Nepal</li>
+              <li>
+                <a href="tel:+9771XXXXXXX" className="text-primary-foreground/80 hover:text-primary-foreground">
+                  +977-1-XXXXXXX
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@swiftelite.np"
+                  className="text-primary-foreground/80 hover:text-primary-foreground"
+                >
+                  info@swiftelite.np
+                </a>
+              </li>
               <li>
                 <Link href="/track" className="text-primary-foreground/80 hover:text-primary-foreground">
                   Track & Trace
-                </Link>
-              </li>
-              <li>
-                <Link href="/help" className="text-primary-foreground/80 hover:text-primary-foreground">
-                  Help Center
-                </Link>
-              </li>
-              <li>
-                <Link href="/faq" className="text-primary-foreground/80 hover:text-primary-foreground">
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="text-primary-foreground/80 hover:text-primary-foreground">
-                  Terms & Conditions
                 </Link>
               </li>
             </ul>
@@ -120,7 +120,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <p className="text-primary-foreground/60 text-sm">
-            © {new Date().getFullYear()} SwiftElite Courier. All rights reserved.
+            © {new Date().getFullYear()} SwiftElite Courier Nepal. All rights reserved.
           </p>
         </div>
       </div>

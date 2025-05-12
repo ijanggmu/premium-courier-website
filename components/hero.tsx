@@ -8,15 +8,14 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Premium Delivery <span className="text-amber-300">Without Compromise</span>
+              Nepal's Premium <span className="text-amber-300">Courier Service</span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-md">
-              Exceptional courier services with unmatched speed, reliability, and care for your most important
-              deliveries.
+              Fast, reliable parcel delivery across Kathmandu and all of Nepal, with international shipping options.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-primary">
-                <Link href="/quote">Get a Quote</Link>
+                <Link href="/quote">Send a Parcel</Link>
               </Button>
               <Button
                 asChild
@@ -32,7 +31,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent z-10"></div>
             <img
               src="/placeholder.svg?height=400&width=600"
-              alt="Premium courier service with uniformed staff and delivery vehicle"
+              alt="Premium courier service in Kathmandu, Nepal with delivery staff and vehicle"
               className="w-full h-full object-cover"
             />
           </div>
