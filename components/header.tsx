@@ -114,7 +114,7 @@ export default function Header() {
           </NavigationMenu>
         </div>
         <div className="flex items-center gap-4">
-          <Link href="/quote" className="hidden md:block">
+          <Link href="/contact" className="hidden md:block">
             <Button>Send a Parcel</Button>
           </Link>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>

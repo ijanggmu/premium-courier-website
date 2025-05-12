@@ -17,7 +17,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-primary">
-                <Link href="/quote">Send Parcel or Export</Link>
+                <Link href="/contact">Get Started</Link>
               </Button>
               <Button
                 asChild
@@ -32,7 +32,7 @@ export default function Hero() {
           <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent z-10"></div>
             <Image
-              src="/images/hero-courier-nepal.jpg"
+              src="https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg"
               alt="Nepal Air Export - #1 courier service in Kathmandu with international export solutions"
               fill
               priority
