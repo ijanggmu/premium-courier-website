@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
@@ -17,7 +18,7 @@ import { Menu } from "lucide-react"
 
 const services = [
   {
-    title: "Nepal Delivery Services",
+    title: "Domestic Courier Services",
     href: "/services/nepal-delivery",
     description: "Fast, reliable delivery across Kathmandu and all of Nepal",
   },
@@ -27,9 +28,9 @@ const services = [
     description: "Reliable export services from Nepal to worldwide destinations",
   },
   {
-    title: "Express Delivery",
-    href: "/services/express-delivery",
-    description: "Same-day and next-day delivery options for urgent shipments",
+    title: "Same-Day Kathmandu Delivery",
+    href: "/services/kathmandu-delivery",
+    description: "Express same-day delivery within Kathmandu Valley",
   },
   {
     title: "International Shipping",
@@ -55,7 +56,14 @@ export default function Header() {
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between py-4">
         <div className="flex items-center gap-6 md:gap-10">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2" aria-label="Nepal Air Export Home">
+            <Image
+              src="/images/nepal-air-export-logo.png"
+              alt="Nepal Air Export Logo"
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+            />
             <span className="text-xl font-bold text-primary">Nepal Air Export</span>
           </Link>
           <NavigationMenu className="hidden md:flex">
@@ -111,7 +119,7 @@ export default function Header() {
           </Link>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" aria-label="Open menu">
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle menu</span>
               </Button>

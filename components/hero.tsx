@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export default function Hero() {
@@ -30,10 +31,13 @@ export default function Hero() {
           </div>
           <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent z-10"></div>
-            <img
-              src="/placeholder.svg?height=400&width=600"
+            <Image
+              src="/images/hero-courier-nepal.jpg"
               alt="Nepal Air Export - #1 courier service in Kathmandu with international export solutions"
-              className="w-full h-full object-cover"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
             />
           </div>
         </div>

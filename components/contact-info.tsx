@@ -16,7 +16,7 @@ export default function ContactInfo() {
             <div>
               <h3 className="font-medium">Phone</h3>
               <p className="text-muted-foreground">Customer Service</p>
-              <p className="font-medium mt-1">+1 (800) 123-4567</p>
+              <p className="font-medium mt-1">+977-1-XXXXXXX</p>
             </div>
           </div>
 
@@ -27,9 +27,9 @@ export default function ContactInfo() {
             <div>
               <h3 className="font-medium">Email</h3>
               <p className="text-muted-foreground">Customer Support</p>
-              <p className="font-medium mt-1">support@swiftelite.com</p>
+              <p className="font-medium mt-1">support@nepairexport.com</p>
               <p className="text-muted-foreground mt-3">Sales Inquiries</p>
-              <p className="font-medium mt-1">sales@swiftelite.com</p>
+              <p className="font-medium mt-1">sales@nepairexport.com</p>
             </div>
           </div>
 
@@ -40,13 +40,11 @@ export default function ContactInfo() {
             <div>
               <h3 className="font-medium">Headquarters</h3>
               <p className="text-muted-foreground mt-1">
-                123 Logistics Avenue
+                Durbar Marg
                 <br />
-                Suite 500
+                Kathmandu 44600
                 <br />
-                New York, NY 10001
-                <br />
-                United States
+                Nepal
               </p>
             </div>
           </div>
@@ -58,11 +56,9 @@ export default function ContactInfo() {
             <div>
               <h3 className="font-medium">Business Hours</h3>
               <div className="grid grid-cols-2 gap-x-4 gap-y-2 mt-2">
-                <p className="text-muted-foreground">Monday - Friday:</p>
-                <p>8:00 AM - 8:00 PM EST</p>
+                <p className="text-muted-foreground">Sunday - Friday:</p>
+                <p>9:00 AM - 6:00 PM NPT</p>
                 <p className="text-muted-foreground">Saturday:</p>
-                <p>9:00 AM - 5:00 PM EST</p>
-                <p className="text-muted-foreground">Sunday:</p>
                 <p>Closed</p>
               </div>
             </div>
@@ -76,12 +72,12 @@ export default function ContactInfo() {
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground mb-4">
-            Premium and Elite customers receive priority support with dedicated account managers and extended hours.
+            Premium and Corporate customers receive priority support with dedicated account managers and extended hours.
           </p>
           <div className="bg-muted p-4 rounded-lg">
             <p className="font-medium">Priority Support Line</p>
-            <p className="text-primary font-bold">+1 (800) 987-6543</p>
-            <p className="text-sm text-muted-foreground mt-2">Available 24/7 for Elite customers</p>
+            <p className="text-primary font-bold">+977-1-XXXXXXX (ext. 1)</p>
+            <p className="text-sm text-muted-foreground mt-2">Available 7 days a week for Premium customers</p>
           </div>
         </CardContent>
       </Card>

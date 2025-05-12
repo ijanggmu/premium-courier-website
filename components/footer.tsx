@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 
 export default function Footer() {
@@ -7,7 +8,10 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="text-xl font-bold mb-4">Nepal Air Export</h3>
+            <div className="flex items-center gap-2 mb-4">
+              <Image src="/images/nepal-air-export-logo-white.png" alt="Nepal Air Export Logo" width={40} height={40} />
+              <h3 className="text-xl font-bold">Nepal Air Export</h3>
+            </div>
             <p className="text-primary-foreground/80 mb-4">
               Nepal's #1 courier service & international export solution. Fast, reliable domestic delivery and global
               shipping with real-time tracking and customs handling.
@@ -16,6 +20,7 @@ export default function Footer() {
               <Link
                 href="https://www.facebook.com/nepairexport"
                 className="text-primary-foreground/80 hover:text-primary-foreground"
+                aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
@@ -23,6 +28,7 @@ export default function Footer() {
               <Link
                 href="https://www.twitter.com/nepairexport"
                 className="text-primary-foreground/80 hover:text-primary-foreground"
+                aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
@@ -30,6 +36,7 @@ export default function Footer() {
               <Link
                 href="https://www.instagram.com/nepairexport"
                 className="text-primary-foreground/80 hover:text-primary-foreground"
+                aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
@@ -37,6 +44,7 @@ export default function Footer() {
               <Link
                 href="https://www.linkedin.com/company/nepairexport"
                 className="text-primary-foreground/80 hover:text-primary-foreground"
+                aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
@@ -56,10 +64,18 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services/international-shipping"
+                  href="/services/international-exports"
                   className="text-primary-foreground/80 hover:text-primary-foreground"
                 >
-                  International Shipping
+                  International Exports
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/kathmandu-delivery"
+                  className="text-primary-foreground/80 hover:text-primary-foreground"
+                >
+                  Same-Day Kathmandu Delivery
                 </Link>
               </li>
               <li>
@@ -89,18 +105,23 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-primary-foreground/80 hover:text-primary-foreground">
-                  Careers
+                <Link href="/coverage" className="text-primary-foreground/80 hover:text-primary-foreground">
+                  Coverage Areas
                 </Link>
               </li>
               <li>
-                <Link href="/news" className="text-primary-foreground/80 hover:text-primary-foreground">
-                  News
+                <Link href="/pricing" className="text-primary-foreground/80 hover:text-primary-foreground">
+                  Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground">
-                  Contact
+                <Link href="/faq" className="text-primary-foreground/80 hover:text-primary-foreground">
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="text-primary-foreground/80 hover:text-primary-foreground">
+                  Terms & Conditions
                 </Link>
               </li>
             </ul>
@@ -124,16 +145,11 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/track" className="text-primary-foreground/80 hover:text-primary-foreground">
-                  Track & Trace
+                  Track Your Package
                 </Link>
               </li>
             </ul>
           </div>
-        </div>
-        <div className="mt-12 pt-8 border-t border-primary-foreground/20">
-          <p className="text-primary-foreground/60 text-sm">
-            © {new Date().getFullYear()} Nepal Air Export. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
